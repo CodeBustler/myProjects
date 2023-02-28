@@ -272,4 +272,8 @@
     .top {
         right: 3vw;
     }
+    
+    .top {
+        opacity: 1;
+    }
 }
