@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.project-container {
+    width: 95vw;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(109, 109, 109, 0.493);
+}
+
+.project-15 {
+    margin: 15px auto;
+}
+
+
+/* PROJECT CONTENT */
+
+/* Project Name */
+.project-name {
+    margin-left: 10px;
+}
+
+.project-name p {
+    padding: 15px 0;
+}
+
+.project-name p span {
+    font-family: montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    background-color: #f1c40f;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.bg-code {
+    position: absolute;
+    opacity: 0.1;
+    filter: blur(4px);
+    filter: opacity(0.5);
+    width: 30%;
+    right: 10px;
+}
+
+.project-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* **** */
+.project-preview {
+    width: 60vw;
+    height: 420px;
+    margin: 10px;
+}
+
+.project-detail {
+    width: 50vw;
+    height: 420px;
+    margin: 10px;
+}
+
+/* **** */
+
+
+/* Project Preview  */
+.project-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-preview iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 16px 15px 20px rgba(77, 77, 77, 0.418);
+}
+
+
+/* Project Details */
+.project-detail {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-detail ul {
+    list-style: none;
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    line-height: 50px;
+    font-size: larger;
+}
+
+
+.project-pros li {
+    display: flex;
+    align-items: center;
+    gap: 8px
+}
+
+/* BUTTONS */
+
+.button-container {
+    margin-top: 15px;
+}
+
+.buttons {
+    width: 180px;
+    height: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(54, 54, 54);
+    margin: 10px 0;
+    padding: 0px 7px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.button-container a {
+    text-decoration: none;
+}
+
+.button-container .buttons:hover {
+    background-color: rgb(31, 30, 30);
+    box-shadow: 8px 8px 10px rgba(77, 77, 77, 0.418);
+
+}
+
+.github-button {
+    z-index: 5;
+}
+
+.button-container .buttons p {
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    line-height: 50px;
+    font-size: larger;
+}
+
+.button-container .buttons img {
+    width: 19%;
+}
+
+.first-row,
+.second-row {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.branding a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ALL PORJECT CONTAINER */
+
+.all-projects-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* TO-TOP */
+
+
+
+.body {
+    position: relative;
+}
+
+.top {
+    opacity: 0.2;
+    z-index: 10;
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+    transition: 0.6s;
+}
+
+.top:hover {
+
+    opacity: 1;
+}
+
+@media only screen and (max-width:855px) {
+
+    .project-container {
+        width: 94vw;
+        margin: 20px auto;
+    }
+
+    .project-name {
+        margin-left: 0;
+    }
+
+    .project-content {
+        flex-direction: column;
+    }
+
+
+    .project-container .bg-code {
+        display: none;
+
+    }
+
+    .project-name p span {
+        font-size: 18px;
+    }
+
+    .project-preview {
+        width: 90vw;
+    }
+
+    .project-detail {
+        width: 90vw;
+    }
+
+    .project-preview {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+        width: 100%;
+    }
+
+    .project-preview iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    .project-detail {
+        padding-left: 0;
+    }
+
+    .first-row,
+    .second-row {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .buttons {
+        width: 70%;
+    }
+
+    .button-container .buttons img {
+        width: 18%;
+    }
+
+    .project-detail ul {
+        font-size: 18px;
+    }
+
+    .top {
+        right: 3vw;
+    }
+}
