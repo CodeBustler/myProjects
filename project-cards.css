@@ -294,7 +294,6 @@ iframe {
     }
 
     .project-preview {
-        /* background-color: #f1c40f; */
         position: relative;
     }
 
@@ -303,6 +302,8 @@ iframe {
         position: absolute;
         top: 2%;
         left: 0;
+        box-shadow: 5px 15px 20px rgba(77, 77, 77, 0.418);
+
     }
 
 }
